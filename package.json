@@ -1,4 +1,4 @@
-```json
+json
 {
   "name": "base44-app",
   "private": true,
@@ -99,4 +99,4 @@
     "vite": "^6.1.0"
   }
 }
-```
+
