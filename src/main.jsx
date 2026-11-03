@@ -1,12 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import * as MyAppComponent from './App.jsx'
 
-// Fallback safeguard in case default export is ever missed
-const RootComponent = App.default || App;
+const TargetApp = MyAppComponent.default || MyAppComponent.App || Object.values(MyAppComponent)[0];
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RootComponent />
+    <TargetApp />
   </React.StrictMode>,
 )
