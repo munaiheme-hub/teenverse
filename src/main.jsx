@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import * as MyAppComponent from './App.jsx'
-
-const TargetApp = MyAppComponent.default || MyAppComponent.App || Object.values(MyAppComponent)[0];
+import App from './App.jsx'
+import './index.css' // If you have your main stylesheet, keep this or ensure your styles load
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <TargetApp />
+    <App />
   </React.StrictMode>,
 )
